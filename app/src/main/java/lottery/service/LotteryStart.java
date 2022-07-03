@@ -23,9 +23,7 @@ public class LotteryStart {
             o.put("error", "less than two participants");
             return o;
         }
-        int c = getRandomNumber(count);
-        long l = getRandomNumber(1000);
-        o = actions.lotteryDraw(c, l);
+        o = actions.lotteryDraw(getRandomNumber(count), getRandomNumber(1000));
         return o;
     }
 }
